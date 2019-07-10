@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SeekBar
+        android:id="@+id/sb_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:min="0"
+        android:max="100"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="413dp"
+        android:layout_height="287dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="false"
+        app:lottie_rawRes="@raw/material_wave_loading" />
+
+</FrameLayout>
