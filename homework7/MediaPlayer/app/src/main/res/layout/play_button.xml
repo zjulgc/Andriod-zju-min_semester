@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#c99f9e9e">
+
+    <include
+        android:id="@+id/include_play_bottom"
+        layout="@layout/play_group"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tv_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="音量"/>
+    <SeekBar
+        android:id="@+id/sb_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_voice"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="65dp"
+        android:max="15"
+        android:min="0"
+        android:progress="2"/>
+
+</RelativeLayout>
